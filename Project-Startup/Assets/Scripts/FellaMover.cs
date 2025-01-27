@@ -20,34 +20,7 @@ public class FellaMover : MonoBehaviour
 
             if (Input.GetMouseButtonUp(0))
             {
-                followMouse = false;
-                GameManager.instance.isHoldingFella = false;
-                GameManager.instance.canMove = true;
-                transform.parent = GameManager.instance.curSceneWorld.transform;
-
-                List<Transform> positions = new List<Transform>();
-
-                foreach (Transform child in transform.parent.transform)
-                {
-                    if (child.tag == "FellaPos" && child.childCount == 1)
-                    {
-                        positions.Add(child);  
-                    }
-                }
-
-                if (positions.Count > 0)
-                {
-                    int closest = 0;
-                    for (int i = 0; i < positions.Count; i++)
-                    {
-                        if ((transform.position - positions[i].position).magnitude < (transform.position - positions[closest].position).magnitude)
-                        {
-                            closest = i;
-                        }
-                    }
-                    transform.position = positions[closest].position;
-                    transform.parent = positions[closest];
-                }
+                
             }
         }
     }
