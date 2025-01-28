@@ -10,6 +10,7 @@ TagManager:
   - Scene
   - Bait
   - Consert
+  - Instrument
   layers:
   - Default
   - TransparentFX

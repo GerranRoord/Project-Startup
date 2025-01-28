@@ -223,6 +223,13 @@ public class Fella : MonoBehaviour
             gameObject.GetComponent<FellaMover>().followMouse = true;
             GetComponent<AudioSource>().PlayOneShot(pickupClip);
             gameObject.GetComponent<FellaMover>().transform.parent = null;
+            foreach (Transform child in transform.transform)
+            {
+                if (child.tag == "Instrument")
+                {
+                    child.gameObject.SetActive(false);
+                }
+            }
             print("drag");
         }
         if (Input.GetMouseButtonUp(0) && dragging)
@@ -255,6 +262,13 @@ public class Fella : MonoBehaviour
                 }
                 transform.position = positions[closest].position;
                 transform.parent = positions[closest];
+                foreach(Transform child in transform.transform)
+                {
+                    if(child.tag == "Instrument")
+                    {
+                        child.gameObject.SetActive(true);
+                    }
+                }
             }
             print("drag release");
 
