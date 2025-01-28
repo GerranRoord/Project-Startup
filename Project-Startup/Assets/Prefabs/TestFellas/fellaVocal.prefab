@@ -174,7 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 50
   rarity: 2
-  fellaName: shark dog
+  fellaName: Shark Boy
   descriptionText: He shark he sing
   cosmetics: []
   cosmeticPrefabs: []

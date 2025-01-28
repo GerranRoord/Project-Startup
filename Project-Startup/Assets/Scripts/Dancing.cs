@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Dancing : MonoBehaviour
 {
-    [SerializeField] float swayAmount = 0.5f;
-    [SerializeField] float swaySpeed = 1f;
+    [SerializeField] float swayAmount = 0.06f;
+    [SerializeField] float swaySpeed = 6f;
     [SerializeField] Vector3 swayAxis = Vector3.right;
 
     Vector3 initialPosition;

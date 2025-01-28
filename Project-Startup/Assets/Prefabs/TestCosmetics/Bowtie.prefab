@@ -116,5 +116,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2a5fde280ad83b47b0f53a916bda97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: FancyAfro
+  itemName: Bowtie
   itemImage: {fileID: 147559036, guid: 01333d7e7fdd8fa498ba1f7c9e6bbfa4, type: 3}

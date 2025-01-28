@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2a5fde280ad83b47b0f53a916bda97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: FancyHat
+  itemName: Hat
   itemImage: {fileID: -737652656, guid: 562cec3159184854f8e41c9169722fe3, type: 3}
 --- !u!1 &8222008262324062709
 GameObject:

@@ -20,7 +20,7 @@ public class Fella : MonoBehaviour
     public FellaRarity rarity;
 
     [SerializeField]
-    private string fellaName;
+   public string fellaName;
     [SerializeField]
     private string descriptionText;
     [SerializeField] List<Cosmetic> cosmetics;

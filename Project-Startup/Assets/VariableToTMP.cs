@@ -26,8 +26,6 @@ public class VariableToTMP : MonoBehaviour
                 {
                     slider.maxValue = GameManager.instance.expToNextLevel;
                     slider.value = GameManager.instance.exp;
-                    print((GameManager.instance.exp / GameManager.instance.expToNextLevel));
-
                 }
                 break;
             case Display.COINS:

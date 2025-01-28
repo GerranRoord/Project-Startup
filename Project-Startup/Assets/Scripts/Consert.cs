@@ -133,8 +133,15 @@ public class Concert : MonoBehaviour
         foreach(GameObject fella in fellas)
         {
             fella.GetComponent<AudioSource>().Play();
+                print(fella.GetComponent<Fella>().fellaName + " dance");
+
+            if (fella.GetComponent<Fella>().fellaName == "Flute Boy" || fella.GetComponent<Fella>().name == "Shark Boy")
+            {
+                fella.AddComponent<Dancing>();
+            }
+
         }
-        foreach(GameObject dancingFella in dancingFellas)
+        foreach (GameObject dancingFella in dancingFellas)
         {
             dancingFella.AddComponent<Dancing>();
 
@@ -157,6 +164,8 @@ public class Concert : MonoBehaviour
         {
             fellas[i].GetComponent<AudioSource>().Stop();
             muteButtons[i].SetActive(false);
+            if (fellas[i].GetComponent<Fella>().fellaName == "Flute Boy" || fellas[i].GetComponent<Fella>().name == "Shark Boy") Destroy(fellas[i].GetComponent<Dancing>());
+            print(fellas[i].name);
         }
         foreach (GameObject dancingFella in dancingFellas)
         {
@@ -170,7 +179,6 @@ public class Concert : MonoBehaviour
         scoreScreen.SetActive(true);
         scoreScreenScoreText.SetTarget(score);
         StartCoroutine(lerpCamera(originalCamPos, originalCamRot));
-
     }
 
     public IEnumerator Timer()

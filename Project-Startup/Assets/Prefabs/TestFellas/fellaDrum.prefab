@@ -159,6 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efb273c5d5d03884d9d08ca7eb838403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followMouse: 0
 --- !u!114 &6523768789176621506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +173,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 20
-  fellaName: DrumAah
+  rarity: 0
+  fellaName: Stony Tony
   descriptionText: This mf drum.
   cosmetics: []
   cosmeticPrefabs: []
