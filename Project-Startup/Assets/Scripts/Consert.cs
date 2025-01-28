@@ -40,6 +40,11 @@ public class Concert : MonoBehaviour
 
     private bool isMuted = false;
 
+    [SerializeField]
+    private AudioSource consertComplete;
+    [SerializeField]
+    private GameObject consertUpgradePos;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -171,11 +176,12 @@ public class Concert : MonoBehaviour
         {
             Destroy(dancingFella.GetComponent<Dancing>());
         }
+        consertComplete.Play();
         BG.Play();
         concertGoing = false;
         concertEnded = true;
         GameManager.instance.userFrozen = false;
-        GameManager.instance.addEXP(score);
+        GameManager.instance.addEXP(score, consertUpgradePos);
         scoreScreen.SetActive(true);
         scoreScreenScoreText.SetTarget(score);
         StartCoroutine(lerpCamera(originalCamPos, originalCamRot));

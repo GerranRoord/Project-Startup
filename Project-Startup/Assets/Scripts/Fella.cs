@@ -29,6 +29,8 @@ public class Fella : MonoBehaviour
     [SerializeField] Transform bowPos;
 
     public AudioClip fellaAudio;
+    [SerializeField]
+    private AudioClip pickupClip;
 
 
     float lastClickTime = 0f;
@@ -216,9 +218,10 @@ public class Fella : MonoBehaviour
             }
             lastClickTime = Time.time;
         }
-        if (Input.GetMouseButton(0) && !GameManager.instance.userFrozen && dragging)
+        if (Input.GetMouseButtonDown(0) && !GameManager.instance.userFrozen && dragging)
         {
             gameObject.GetComponent<FellaMover>().followMouse = true;
+            GetComponent<AudioSource>().PlayOneShot(pickupClip);
             gameObject.GetComponent<FellaMover>().transform.parent = null;
             print("drag");
         }
