@@ -49,6 +49,7 @@ MonoBehaviour:
   interactingObj: 0
   interactingUI: 0
   canMove: 1
+  isHoldingFella: 0
   fellaInspectionScreen: {fileID: 3058136498864371907, guid: 069992d377975d141984cbef4ff3e05f, type: 3}
   cosmeticsInventory:
   - {fileID: 727740047392196143, guid: 2e6a3ff771b15f7408487b63478ecbaf, type: 3}
@@ -64,4 +65,7 @@ MonoBehaviour:
   - {fileID: 7178027814460541442, guid: ea9054b722a39c44d8ce0cd1a1c4307f, type: 3}
   - {fileID: 3527796405166044546, guid: 6294a343c754d224eb337b3ce7472b75, type: 3}
   exp: 0
+  expToNextLevel: 100
   lvl: 0
+  invItemPrefab: {fileID: 0}
+  coins: 100

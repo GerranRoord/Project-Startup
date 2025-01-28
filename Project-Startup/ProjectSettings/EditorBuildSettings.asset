@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScenes/GerranTestScene2.unity
     guid: 4721f86c537d4dd45b7e2ede0d80f1b4
+  - enabled: 1
+    path: Assets/Scenes/WorldSelectScene.unity
+    guid: 1dfd84f8bbdd0e4489245f41068690ed
+  - enabled: 1
+    path: Assets/Scenes/ShopScene.unity
+    guid: 15c0aea5ad97c364ca653dd3c42de3d9
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 7d0b648c87ec8364b843ff87f6b744dd, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 7949611d9589825479aa9eea74cfd8c1, type: 2}

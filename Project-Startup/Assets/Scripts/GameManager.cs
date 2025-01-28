@@ -34,15 +34,17 @@ public class GameManager : MonoBehaviour
     private GameObject[] lvlRewards;
 
     [SerializeField]
-    private int exp;
+    public int exp;
 
-    private int expToNextLevel = 100;
+    public int expToNextLevel = 100;
 
     [SerializeField]
-    private int lvl;
+    public int lvl;
 
     [SerializeField]
     private GameObject invItemPrefab;
+    [SerializeField]
+    public int coins;
 
     void Awake()
     {

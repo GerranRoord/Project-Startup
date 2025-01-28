@@ -534,9 +534,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7836630731536272230, guid: bf4d1ee0d3f6f0045a63ea7e0a9a4d9d, type: 3}
+      propertyPath: coins
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836630731536272230, guid: bf4d1ee0d3f6f0045a63ea7e0a9a4d9d, type: 3}
       propertyPath: invItemPrefab
       value: 
       objectReference: {fileID: 6940374125615376548, guid: f8c01bf15f53e634f8ebc4ccc41ef7bb, type: 3}
+    - target: {fileID: 7836630731536272230, guid: bf4d1ee0d3f6f0045a63ea7e0a9a4d9d, type: 3}
+      propertyPath: cosmeticsInventory.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -892,7 +900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2589d37b19dc4b84fbf6186e5499ba95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: OverworldScene
+  sceneName: WorldSelectScene
 --- !u!1 &1403648655
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,6 +913,7 @@ GameObject:
   - component: {fileID: 1403648659}
   - component: {fileID: 1403648658}
   - component: {fileID: 1403648657}
+  - component: {fileID: 1403648660}
   m_Layer: 5
   m_Name: ShopButton
   m_TagString: Untagged
@@ -976,13 +985,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1403648660}
+        m_TargetAssemblyTypeName: MainMenuSceneLoader, Assembly-CSharp
+        m_MethodName: LoadNewScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1026,6 +1035,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403648655}
   m_CullTransparentMesh: 1
+--- !u!114 &1403648660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403648655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2589d37b19dc4b84fbf6186e5499ba95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: ShopScene
 --- !u!1 &1418826059
 GameObject:
   m_ObjectHideFlags: 0
