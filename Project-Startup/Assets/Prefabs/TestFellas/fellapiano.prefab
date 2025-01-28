@@ -150,6 +150,7 @@ MonoBehaviour:
   hatPos: {fileID: 204476599476056593}
   bowPos: {fileID: 7867228943481250308}
   fellaAudio: {fileID: 8300000, guid: b80da1b5c009fae49a2142a0e50d9180, type: 3}
+  pickupClip: {fileID: 8300000, guid: ecc3bbf1baad5a34baf0eb881b0480b6, type: 3}
 --- !u!54 &2736174281294061417
 Rigidbody:
   m_ObjectHideFlags: 0

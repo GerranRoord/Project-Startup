@@ -159,6 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efb273c5d5d03884d9d08ca7eb838403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followMouse: 0
 --- !u!114 &6523768789176621506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 20
+  rarity: 0
   fellaName: DrumAah
   descriptionText: This mf drum.
   cosmetics: []
@@ -179,6 +181,7 @@ MonoBehaviour:
   hatPos: {fileID: 6471851009776540003}
   bowPos: {fileID: 3934701441882936639}
   fellaAudio: {fileID: 8300000, guid: fedcb416460e8ee49a2ea224e2196651, type: 3}
+  pickupClip: {fileID: 8300000, guid: ecc3bbf1baad5a34baf0eb881b0480b6, type: 3}
 --- !u!54 &5499115801193150674
 Rigidbody:
   m_ObjectHideFlags: 0

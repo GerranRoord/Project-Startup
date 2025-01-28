@@ -46,6 +46,11 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public int coins;
 
+    [SerializeField]
+    private AudioSource gmAudioSource;
+    [SerializeField]
+    private AudioClip lvlUpClip;
+
     void Awake()
     {
         if (GameManager.instance == null)
@@ -102,13 +107,14 @@ public class GameManager : MonoBehaviour
         userFrozen = !b;
         print(!b);
     }
-    public void addEXP(int xp)
+    public void addEXP(int xp, GameObject consertUpgradePos)
     {
         exp += xp;
 
         while(exp >= expToNextLevel)
         {
             lvl++;
+            gmAudioSource.PlayOneShot(lvlUpClip);
 
             if (lvl < lvlRewards.Length)
             {
@@ -119,6 +125,10 @@ public class GameManager : MonoBehaviour
                 else if(lvlRewards[lvl].tag == "Bait")
                 {
                     BaitInv.Add(lvlRewards[lvl]);
+                }
+                else if (lvlRewards[lvl].tag == "Consert")
+                {
+                    Instantiate(lvlRewards[lvl], consertUpgradePos.transform);
                 }
             }
 

@@ -5,6 +5,8 @@ public class ConsertPosBG : MonoBehaviour
     [SerializeField]
     private GameObject bg;
 
+    public int consertPos;
+
     // Update is called once per frame
     void Update()
     {
