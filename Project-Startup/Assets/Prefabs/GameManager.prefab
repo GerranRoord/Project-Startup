@@ -52,8 +52,8 @@ MonoBehaviour:
   isHoldingFella: 0
   fellaInspectionScreen: {fileID: 3058136498864371907, guid: 069992d377975d141984cbef4ff3e05f, type: 3}
   cosmeticsInventory:
-  - {fileID: 727740047392196143, guid: 2e6a3ff771b15f7408487b63478ecbaf, type: 3}
-  - {fileID: 2697153219072761045, guid: 6294a343c754d224eb337b3ce7472b75, type: 3}
+  - {fileID: 3527796405166044546, guid: 6294a343c754d224eb337b3ce7472b75, type: 3}
+  - {fileID: 6858534121511387653, guid: 2e6a3ff771b15f7408487b63478ecbaf, type: 3}
   BaitInv: []
   newFellas: []
   ownedFellas:
@@ -69,3 +69,5 @@ MonoBehaviour:
   lvl: 0
   invItemPrefab: {fileID: 0}
   coins: 100
+  gmAudioSource: {fileID: 0}
+  lvlUpClip: {fileID: 0}

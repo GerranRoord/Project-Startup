@@ -117,8 +117,7 @@ public class Fella : MonoBehaviour
 
         foreach (GameObject cosmetic in GameManager.instance.cosmeticsInventory)
         {
-            print(cosmetic);
-            cosmeticNames.Add(cosmetic.GetComponent<Cosmetic>().Name);
+           if(cosmetic!=null) cosmeticNames.Add(cosmetic.GetComponent<Cosmetic>().Name);
         }
         cosmeticNames.Add("None");
         dropdown.ClearOptions();
@@ -150,8 +149,17 @@ public class Fella : MonoBehaviour
             else
             {
                GameObject cosmeticToAdd = GameManager.instance.cosmeticsInventory.Find(cosmetic => cosmetic.name == selectedCosmeticName);
-                GameObject cosmeticInstance = Instantiate(cosmeticToAdd, transform);
-                equipCosmetic(cosmeticInstance, cosmeticToAdd);
+                if (cosmeticToAdd.name == "Bowtie")
+                {
+                    GameObject cosmeticInstance = Instantiate(cosmeticToAdd, transform.Find("bowPos"));
+                    equipCosmetic(cosmeticInstance, cosmeticToAdd);
+
+                }
+                else
+                {
+                    GameObject cosmeticInstance = Instantiate(cosmeticToAdd, transform.Find("hatPos"));
+                    equipCosmetic(cosmeticInstance, cosmeticToAdd);
+                }
             }
         });
 
