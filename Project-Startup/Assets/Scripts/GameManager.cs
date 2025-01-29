@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     public GameObject fellaInspectionScreen;
 
     [SerializeField]
-    public List<Cosmetic> cosmeticsInventory;
+    public List<GameObject> cosmeticsInventory;
     
     [SerializeField]
     public List<GameObject> BaitInv;
@@ -121,7 +121,7 @@ public class GameManager : MonoBehaviour
             {
                 if (lvlRewards[lvl].GetComponent<Cosmetic>() != null)
                 {
-                    cosmeticsInventory.Add(lvlRewards[lvl].GetComponent<Cosmetic>());
+                    cosmeticsInventory.Add(lvlRewards[lvl]);
                     gainedItems += lvlRewards[lvl].name + "/n";
                 }
                 else if(lvlRewards[lvl].tag == "Bait")
@@ -144,7 +144,7 @@ public class GameManager : MonoBehaviour
 
     public void openInv(GameObject content)
     {
-        foreach(Cosmetic item in cosmeticsInventory)
+        foreach(GameObject item in cosmeticsInventory)
         {
             GameObject invItem = Instantiate(invItemPrefab, content.transform);
             Item itemScript = item.gameObject.GetComponent<Item>();
