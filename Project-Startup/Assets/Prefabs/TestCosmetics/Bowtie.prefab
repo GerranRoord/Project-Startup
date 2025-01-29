@@ -117,4 +117,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Bowtie
-  itemImage: {fileID: 147559036, guid: 01333d7e7fdd8fa498ba1f7c9e6bbfa4, type: 3}
+  itemImage: {fileID: -1323103929, guid: 3d2ef3c3edd2ddb4d8967166660b3447, type: 3}

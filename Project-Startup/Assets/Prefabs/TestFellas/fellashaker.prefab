@@ -5008,8 +5008,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 5
   rarity: 0
-  fellaName: Flute Boy
-  descriptionText: This boy flutes hard.
+  fellaName: Blaze Beat
+  descriptionText: "Blaze Beat is like a little firecracker who brings sparkly shakes
+    and sizzling sounds to the band! His shakers add just the right touch of fun
+    and excitement to every song. When Blaze Beat starts grooving, it\u2019s like
+    the music catches fire in the best way possible. He\u2019s always ready to turn
+    up the energy and make sure everyone is having a blast! "
   cosmetics: []
   cosmeticPrefabs:
   - {fileID: 6858534121511387653, guid: 2e6a3ff771b15f7408487b63478ecbaf, type: 3}
@@ -5017,6 +5021,7 @@ MonoBehaviour:
   hatPos: {fileID: 2239360639091849819}
   bowPos: {fileID: 2190216556589537631}
   fellaAudio: {fileID: 8300000, guid: 60bd990ffa260af4d86afeef22f9d022, type: 3}
+  ShortfellaAudio: {fileID: 8300000, guid: 16947013d5700134399ee24508e55252, type: 3}
   pickupClip: {fileID: 8300000, guid: ecc3bbf1baad5a34baf0eb881b0480b6, type: 3}
 --- !u!54 &6873438568036550333
 Rigidbody:
@@ -5151,7 +5156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2239360639091849819}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: hatPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -144,8 +144,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 10
   rarity: 1
-  fellaName: Piano Man
-  descriptionText: He likes pretzels. Plays piano. Is man.
+  fellaName: Octo Jam
+  descriptionText: "Octo Jam is the band\u2019s musical wizard with eight amazing
+    arms! He can play the piano, guitar, and so many other instruments all at the
+    same time. His melodies swirl and dance, filling the air with beautiful sounds
+    that make you want to twirl and jump. Octo Jam loves creating new tunes and keeping
+    the band\u2019s music exciting and fresh\u2014he\u2019s never out of ideas! "
   cosmetics: []
   cosmeticPrefabs:
   - {fileID: 6858534121511387653, guid: 2e6a3ff771b15f7408487b63478ecbaf, type: 3}
@@ -153,6 +157,7 @@ MonoBehaviour:
   hatPos: {fileID: 204476599476056593}
   bowPos: {fileID: 7867228943481250308}
   fellaAudio: {fileID: 8300000, guid: 1de7fa2d3d3bd4242b0601365cb764c6, type: 3}
+  ShortfellaAudio: {fileID: 8300000, guid: 7bdcb63266b352440b21a5b278804901, type: 3}
   pickupClip: {fileID: 8300000, guid: ecc3bbf1baad5a34baf0eb881b0480b6, type: 3}
 --- !u!54 &2736174281294061417
 Rigidbody:
@@ -287,7 +292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 204476599476056593}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: hatPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,6 +416,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 381948c064f76244db9d61d571218c74, type: 3}
       propertyPath: m_Name
       value: octopus instrument
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 381948c064f76244db9d61d571218c74, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 381948c064f76244db9d61d571218c74, type: 3}
       propertyPath: m_IsActive

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6471851009776540003}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: hatPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,10 @@ MonoBehaviour:
   score: 20
   rarity: 0
   fellaName: Stony Tony
-  descriptionText: This mf drum.
+  descriptionText: "Stony Tony loves to feel the beat of the earth beneath his feet!
+    He thumps the ground to communicate with his fellow Fellas underground, creating
+    deep, resonant percussion rhythms that echo like a heartbeat through the soil.
+    When he\u2019s not jamming, he\u2019s napping in the sun to recharge his groove."
   cosmetics: []
   cosmeticPrefabs:
   - {fileID: 6858534121511387653, guid: 2e6a3ff771b15f7408487b63478ecbaf, type: 3}
@@ -183,6 +186,7 @@ MonoBehaviour:
   hatPos: {fileID: 6471851009776540003}
   bowPos: {fileID: 3934701441882936639}
   fellaAudio: {fileID: 8300000, guid: 72e3c701212df0242b565a733eace128, type: 3}
+  ShortfellaAudio: {fileID: 8300000, guid: 4bb08604c6efafc428f92ed99d7d5b5c, type: 3}
   pickupClip: {fileID: 8300000, guid: ecc3bbf1baad5a34baf0eb881b0480b6, type: 3}
 --- !u!54 &5499115801193150674
 Rigidbody:
@@ -317,7 +321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3934701441882936639}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bowPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}

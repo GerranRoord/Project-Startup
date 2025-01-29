@@ -174,8 +174,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 50
   rarity: 2
-  fellaName: Shark Boy
-  descriptionText: He shark he sing
+  fellaName: Jazzy Jaws
+  descriptionText: "Jazzy Jaws has the biggest, boldest voice you\u2019ve ever heard!
+    His songs can be soft and sweet like a calm ocean, or loud and powerful like
+    crashing waves. He\u2019s the one who gets the crowd cheering and singing along,
+    and he always makes sure the music feels alive and full of fun. Jazzy Jaws is
+    the band\u2019s star performer, and his big personality makes every show unforgettable! "
   cosmetics: []
   cosmeticPrefabs:
   - {fileID: 6858534121511387653, guid: 2e6a3ff771b15f7408487b63478ecbaf, type: 3}
@@ -183,6 +187,7 @@ MonoBehaviour:
   hatPos: {fileID: 7146672459428651170}
   bowPos: {fileID: 1487916715262086401}
   fellaAudio: {fileID: 8300000, guid: 91b7b0e7b90ec2245b7aee1fb89eda00, type: 3}
+  ShortfellaAudio: {fileID: 8300000, guid: 9bae3e95df20bff41b88b293f84b12ab, type: 3}
   pickupClip: {fileID: 8300000, guid: ecc3bbf1baad5a34baf0eb881b0480b6, type: 3}
 --- !u!54 &7168175958860300941
 Rigidbody:
@@ -317,7 +322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7146672459428651170}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: hatPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
