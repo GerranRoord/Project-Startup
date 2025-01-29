@@ -790,7 +790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11089f53f04f2ad4cbf51635197e8d6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cosPrefab: {fileID: 2697153219072761045, guid: 6294a343c754d224eb337b3ce7472b75, type: 3}
+  cosPrefab: {fileID: 3527796405166044546, guid: 6294a343c754d224eb337b3ce7472b75, type: 3}
 --- !u!82 &1049790705
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1445,6 +1445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 1744052198}
   display: 2
+  slider: {fileID: 0}
 --- !u!1 &2002082678
 GameObject:
   m_ObjectHideFlags: 0
