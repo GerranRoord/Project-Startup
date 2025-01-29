@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < ownedFellas.Count; i++)
         {
             GameObject fella = Instantiate(ownedFellas[i], curSceneWorld.transform);
-            fella.transform.position = new Vector3(i,1,0);
+            fella.transform.position = new Vector3(i * 2,1,0);
         }
     }
 

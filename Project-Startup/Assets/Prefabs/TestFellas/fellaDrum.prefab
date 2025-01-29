@@ -64,7 +64,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10.723, y: 10.723, z: 10.723}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3934701441882936639}
@@ -78,7 +78,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3880711350253856754}
-  m_Mesh: {fileID: 7854677610985959545, guid: 91800248a781ec24b8ca7d4ddd29274c, type: 3}
+  m_Mesh: {fileID: -1116444134294172880, guid: 30d002f2ce2ef644bbf4ee2a16b86059, type: 3}
 --- !u!23 &1669211318519769862
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -143,10 +143,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.05053421
-  m_Height: 0.10106842
+  m_Radius: 4.532399
+  m_Height: 9.780255
   m_Direction: 1
-  m_Center: {x: -0.002113016, y: 0.007947779, z: -0.0072358805}
+  m_Center: {x: -0.32286048, y: 4.6134086, z: -0.7600403}
 --- !u!114 &4789207460396796700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,7 +180,7 @@ MonoBehaviour:
   cosmeticPrefabs: []
   hatPos: {fileID: 6471851009776540003}
   bowPos: {fileID: 3934701441882936639}
-  fellaAudio: {fileID: 8300000, guid: fedcb416460e8ee49a2ea224e2196651, type: 3}
+  fellaAudio: {fileID: 8300000, guid: 72e3c701212df0242b565a733eace128, type: 3}
   pickupClip: {fileID: 8300000, guid: ecc3bbf1baad5a34baf0eb881b0480b6, type: 3}
 --- !u!54 &5499115801193150674
 Rigidbody:
