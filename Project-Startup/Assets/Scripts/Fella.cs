@@ -131,7 +131,7 @@ public class Fella : MonoBehaviour
             if (selectedCosmeticName == "None")
             {
                 List<Transform> toDestroy = new List<Transform>();
-                foreach (Transform child in transform)
+                foreach (Transform child in transform.Find("bowPos").transform)
                 {
                     Cosmetic childCosmetic = child.GetComponent<Cosmetic>();
                     if (childCosmetic != null)
@@ -141,6 +141,18 @@ public class Fella : MonoBehaviour
                         toDestroy.Add(child);
                     }
                 }
+
+                foreach (Transform child in transform.Find("hatPos").transform)
+                {
+                    Cosmetic childCosmetic = child.GetComponent<Cosmetic>();
+                    if (childCosmetic != null)
+                    {
+                        GameManager.instance.cosmeticsInventory.Add(cosmeticPrefabs.Find(cosmetic => cosmetic.GetComponent<Cosmetic>().Name == childCosmetic.Name));
+                        cosmetics.Remove(childCosmetic);
+                        toDestroy.Add(child);
+                    }
+                }
+
                 foreach (Transform transform in toDestroy)
                 {
                     Destroy(transform.gameObject);
