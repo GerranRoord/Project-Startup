@@ -150,7 +150,7 @@ MonoBehaviour:
   cosmeticPrefabs: []
   hatPos: {fileID: 204476599476056593}
   bowPos: {fileID: 7867228943481250308}
-  fellaAudio: {fileID: 8300000, guid: b80da1b5c009fae49a2142a0e50d9180, type: 3}
+  fellaAudio: {fileID: 8300000, guid: 1de7fa2d3d3bd4242b0601365cb764c6, type: 3}
   pickupClip: {fileID: 8300000, guid: ecc3bbf1baad5a34baf0eb881b0480b6, type: 3}
 --- !u!54 &2736174281294061417
 Rigidbody:
@@ -398,6 +398,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 381948c064f76244db9d61d571218c74, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c8ea45077cc1266418c79100c42d6785, type: 2}
     - target: {fileID: 919132149155446097, guid: 381948c064f76244db9d61d571218c74, type: 3}
       propertyPath: m_Name
       value: octopus instrument
