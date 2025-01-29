@@ -41,6 +41,7 @@ public class LegendaryMosterPuzzel : MonoBehaviour
 
     public void showFella()
     {
+        StopAllCoroutines();
         fella.SetActive(true);
     }
 }

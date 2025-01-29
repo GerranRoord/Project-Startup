@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8103621510046052325}
   - component: {fileID: -3292044914896820802}
   m_Layer: 0
-  m_Name: Meat
+  m_Name: Steak
   m_TagString: Bait
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,5 +121,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2a5fde280ad83b47b0f53a916bda97f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: meat bait
+  itemName: Steak
   itemImage: {fileID: 711834036, guid: c96a19e2263bf7b48bd89c21ebae7ab8, type: 3}

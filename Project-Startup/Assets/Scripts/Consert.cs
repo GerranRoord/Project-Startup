@@ -22,6 +22,8 @@ public class Concert : MonoBehaviour
     private GameObject scoreScreen;
     [SerializeField]
     private NumberGoUp scoreScreenScoreText;
+    [SerializeField]
+    TextMeshProUGUI gainedItemsText;
 
     [SerializeField] Transform concertCamTransform;
     private Vector3 originalCamPos;
@@ -181,9 +183,10 @@ public class Concert : MonoBehaviour
         concertGoing = false;
         concertEnded = true;
         GameManager.instance.userFrozen = false;
-        GameManager.instance.addEXP(score, consertUpgradePos);
-        scoreScreen.SetActive(true);
+        GameManager.instance.addEXP(score, consertUpgradePos, out string gainedItems);
         scoreScreenScoreText.SetTarget(score);
+        gainedItemsText.text = gainedItems;
+        scoreScreen.SetActive(true);
         StartCoroutine(lerpCamera(originalCamPos, originalCamRot));
     }
 
@@ -196,7 +199,7 @@ public class Concert : MonoBehaviour
             {
                 score += fella.GetComponent<Fella>().getScore();
             }
-            scoreText.text = "score: " + score;
+            scoreText.text = "Score: " + score;
 
             timer++;
             if (timer >= concertTime)
@@ -204,8 +207,6 @@ public class Concert : MonoBehaviour
                 StopConsert();
                 StopCoroutine(Timer());
                 StartCoroutine(lerpCamera(originalCamPos, originalCamRot));
-
-                print("wth");
             }
         }
     }
