@@ -76,6 +76,7 @@ public class Concert : MonoBehaviour
         {
             muteButtons[i].SetActive(false);
         }
+        BG.Stop();
 
         fellas.Clear();
         int curActive = 0;
@@ -104,6 +105,7 @@ public class Concert : MonoBehaviour
             fellas[i].GetComponent<AudioSource>().Stop();
             muteButtons[i].SetActive(false);
         }
+        BG.Play();
     }
 
     public void StartConsert()

@@ -10693,11 +10693,11 @@ PrefabInstance:
     - target: {fileID: 7836630731536272230, guid: bf4d1ee0d3f6f0045a63ea7e0a9a4d9d, type: 3}
       propertyPath: 'cosmeticsInventory.Array.data[0]'
       value: 
-      objectReference: {fileID: 2697153219072761045, guid: 6294a343c754d224eb337b3ce7472b75, type: 3}
+      objectReference: {fileID: 6858534121511387653, guid: 2e6a3ff771b15f7408487b63478ecbaf, type: 3}
     - target: {fileID: 7836630731536272230, guid: bf4d1ee0d3f6f0045a63ea7e0a9a4d9d, type: 3}
       propertyPath: 'cosmeticsInventory.Array.data[1]'
       value: 
-      objectReference: {fileID: 727740047392196143, guid: 2e6a3ff771b15f7408487b63478ecbaf, type: 3}
+      objectReference: {fileID: 3527796405166044546, guid: 6294a343c754d224eb337b3ce7472b75, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
