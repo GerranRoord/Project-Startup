@@ -32,9 +32,9 @@ public class UncommanFellaPuzzel : MonoBehaviour
     public IEnumerator Timer()
     {
         yield return new WaitForSeconds(timeBetweenAnim);
-        transform.position += Vector3.up * .2f;
+        transform.position += Vector3.up * .5f;
         yield return new WaitForSeconds(animTime);
-        transform.position += Vector3.down * .2f;
+        transform.position += Vector3.down * .5f;
 
         StartCoroutine(Timer());
     }
@@ -53,9 +53,9 @@ public class UncommanFellaPuzzel : MonoBehaviour
     public IEnumerator ClickedAnim()
     {
         GetComponentInChildren<FellaCapturable>().canCapture = true;
-        transform.position += Vector3.up * .5f;
+        transform.position += Vector3.up * 1f;
         yield return new WaitForSeconds(animTimeWhenClicked);
-        transform.position += Vector3.down * .5f;
+        transform.position += Vector3.down * 1f;
 
         StartCoroutine(Timer());
     }
