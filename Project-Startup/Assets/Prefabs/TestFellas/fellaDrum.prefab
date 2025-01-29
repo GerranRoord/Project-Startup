@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6471851009776540003}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: hatPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -320,7 +320,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3934701441882936639}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bowPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}

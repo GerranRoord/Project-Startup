@@ -291,7 +291,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 204476599476056593}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: hatPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,6 +415,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 381948c064f76244db9d61d571218c74, type: 3}
       propertyPath: m_Name
       value: octopus instrument
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 381948c064f76244db9d61d571218c74, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 381948c064f76244db9d61d571218c74, type: 3}
       propertyPath: m_IsActive
