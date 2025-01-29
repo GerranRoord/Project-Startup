@@ -24,7 +24,7 @@ public class Fella : MonoBehaviour
     [SerializeField]
     private string descriptionText;
     [SerializeField] List<Cosmetic> cosmetics;
-    [SerializeField] List<Cosmetic> cosmeticPrefabs;
+    [SerializeField] List<GameObject> cosmeticPrefabs;
     [SerializeField] Transform hatPos;
     [SerializeField] Transform bowPos;
 
@@ -70,14 +70,14 @@ public class Fella : MonoBehaviour
         return score + bonus;
     }
 
-    void equipCosmetic(Cosmetic instance, Cosmetic c)
+    void equipCosmetic(GameObject instance, GameObject c)
     {
-        if (instance.Name == "Hat")
+        if (instance.GetComponent<Cosmetic>().Name == "Hat")
             instance.transform.position = hatPos.position;
-        else if (instance.Name == "Bowtie")
+        else if (instance.GetComponent<Cosmetic>().Name == "Bowtie")
             instance.transform.position = bowPos.position;
 
-        if (cosmetics.Contains(instance)) cosmetics.Add(instance);
+        if (cosmetics.Contains(instance.GetComponent<Cosmetic>())) cosmetics.Add(instance.GetComponent<Cosmetic>());
         if (cosmeticPrefabs.Contains(c)) cosmeticPrefabs.Add(c);
         if (GameManager.instance.cosmeticsInventory.Contains(c)) GameManager.instance.cosmeticsInventory.Remove(c);
     }
@@ -115,9 +115,9 @@ public class Fella : MonoBehaviour
 
         List<string> cosmeticNames = new List<string>() { "Select cosmetic" };
 
-        foreach (Cosmetic cosmetic in GameManager.instance.cosmeticsInventory)
+        foreach (GameObject cosmetic in GameManager.instance.cosmeticsInventory)
         {
-            cosmeticNames.Add(cosmetic.name);
+            cosmeticNames.Add(cosmetic.GetComponent<Cosmetic>().Name);
         }
         cosmeticNames.Add("None");
         dropdown.ClearOptions();
@@ -135,7 +135,7 @@ public class Fella : MonoBehaviour
                     Cosmetic childCosmetic = child.GetComponent<Cosmetic>();
                     if (childCosmetic != null)
                     {
-                        GameManager.instance.cosmeticsInventory.Add(cosmeticPrefabs.Find(cosmetic => childCosmetic.Name == cosmetic.Name));
+                        GameManager.instance.cosmeticsInventory.Add(cosmeticPrefabs.Find(cosmetic=> cosmetic.GetComponent<Cosmetic>().Name == childCosmetic.Name));
                         cosmetics.Remove(childCosmetic);
                         toDestroy.Add(child);
                     }
@@ -148,8 +148,8 @@ public class Fella : MonoBehaviour
             }
             else
             {
-                Cosmetic cosmeticToAdd = GameManager.instance.cosmeticsInventory.Find(cosmetic => cosmetic.name == selectedCosmeticName);
-                Cosmetic cosmeticInstance = Instantiate(cosmeticToAdd, transform);
+               GameObject cosmeticToAdd = GameManager.instance.cosmeticsInventory.Find(cosmetic => cosmetic.name == selectedCosmeticName);
+                GameObject cosmeticInstance = Instantiate(cosmeticToAdd, transform);
                 equipCosmetic(cosmeticInstance, cosmeticToAdd);
             }
         });

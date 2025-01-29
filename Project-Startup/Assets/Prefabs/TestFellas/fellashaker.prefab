@@ -5011,7 +5011,9 @@ MonoBehaviour:
   fellaName: Flute Boy
   descriptionText: This boy flutes hard.
   cosmetics: []
-  cosmeticPrefabs: []
+  cosmeticPrefabs:
+  - {fileID: 6858534121511387653, guid: 2e6a3ff771b15f7408487b63478ecbaf, type: 3}
+  - {fileID: 3527796405166044546, guid: 6294a343c754d224eb337b3ce7472b75, type: 3}
   hatPos: {fileID: 2239360639091849819}
   bowPos: {fileID: 2190216556589537631}
   fellaAudio: {fileID: 8300000, guid: 60bd990ffa260af4d86afeef22f9d022, type: 3}

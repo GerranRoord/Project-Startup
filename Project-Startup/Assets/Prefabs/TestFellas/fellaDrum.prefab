@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1743438090262874094}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0015, y: 0.0378, z: -0.0098}
+  m_LocalPosition: {x: -0.45, y: 6.77, z: 0.44}
   m_LocalScale: {x: 0.093257494, y: 0.093257494, z: 0.093257494}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -177,7 +177,9 @@ MonoBehaviour:
   fellaName: Stony Tony
   descriptionText: This mf drum.
   cosmetics: []
-  cosmeticPrefabs: []
+  cosmeticPrefabs:
+  - {fileID: 6858534121511387653, guid: 2e6a3ff771b15f7408487b63478ecbaf, type: 3}
+  - {fileID: 3527796405166044546, guid: 6294a343c754d224eb337b3ce7472b75, type: 3}
   hatPos: {fileID: 6471851009776540003}
   bowPos: {fileID: 3934701441882936639}
   fellaAudio: {fileID: 8300000, guid: 72e3c701212df0242b565a733eace128, type: 3}
@@ -331,7 +333,7 @@ Transform:
   m_GameObject: {fileID: 5848301557357640451}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0015000001, y: 0.0102, z: 0.0094}
+  m_LocalPosition: {x: -0.0015000001, y: 4.36, z: 2.24}
   m_LocalScale: {x: 0.0932575, y: 0.0932575, z: 0.0932575}
   m_ConstrainProportionsScale: 0
   m_Children: []

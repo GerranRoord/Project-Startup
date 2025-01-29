@@ -1715,11 +1715,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 488061372}
   m_CullTransparentMesh: 1
---- !u!4 &496221863 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b435c593e91efbf4ca8087f451384034, type: 3}
-  m_PrefabInstance: {fileID: 153438160}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &504761115
 GameObject:
   m_ObjectHideFlags: 0
@@ -6497,7 +6492,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1387484122
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9248,7 +9243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2021326290
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9961,6 +9956,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7836630731536272230, guid: bf4d1ee0d3f6f0045a63ea7e0a9a4d9d, type: 3}
+      propertyPath: ownedFellas.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836630731536272230, guid: bf4d1ee0d3f6f0045a63ea7e0a9a4d9d, type: 3}
       propertyPath: 'lvlRewards.Array.data[1]'
       value: 
       objectReference: {fileID: 1605949237355636914, guid: 9d0b3107e45800041a5617e3616e804f, type: 3}
@@ -9968,6 +9967,14 @@ PrefabInstance:
       propertyPath: 'lvlRewards.Array.data[5]'
       value: 
       objectReference: {fileID: 1605949237355636914, guid: 9d0b3107e45800041a5617e3616e804f, type: 3}
+    - target: {fileID: 7836630731536272230, guid: bf4d1ee0d3f6f0045a63ea7e0a9a4d9d, type: 3}
+      propertyPath: 'ownedFellas.Array.data[1]'
+      value: 
+      objectReference: {fileID: 4144325008383091761, guid: b6d5338118d143044bf5b68d3c9d6f76, type: 3}
+    - target: {fileID: 7836630731536272230, guid: bf4d1ee0d3f6f0045a63ea7e0a9a4d9d, type: 3}
+      propertyPath: 'ownedFellas.Array.data[2]'
+      value: 
+      objectReference: {fileID: 3535927722016138417, guid: 9f368d3bcbcf6bf47be4e4d2de4a9f4c, type: 3}
     - target: {fileID: 7836630731536272230, guid: bf4d1ee0d3f6f0045a63ea7e0a9a4d9d, type: 3}
       propertyPath: cosmeticsInventory.Array.size
       value: 2

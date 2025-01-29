@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BuyCosmetic : MonoBehaviour
 {
-    [SerializeField] Cosmetic cosPrefab;
+    [SerializeField] GameObject cosPrefab;
    
    public void Buy()
     {
