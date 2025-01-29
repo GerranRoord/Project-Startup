@@ -29,6 +29,7 @@ public class Fella : MonoBehaviour
     [SerializeField] Transform bowPos;
 
     public AudioClip fellaAudio;
+    public AudioClip ShortfellaAudio;
     [SerializeField]
     private AudioClip pickupClip;
 
@@ -49,7 +50,7 @@ public class Fella : MonoBehaviour
 
     public void TestSound()
     {
-        GetComponent<AudioSource>().PlayOneShot(fellaAudio);
+        GetComponent<AudioSource>().PlayOneShot(ShortfellaAudio);
     }
 
     private void OnCollisionEnter(Collision collision)
