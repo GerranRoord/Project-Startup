@@ -5014,7 +5014,7 @@ MonoBehaviour:
   cosmeticPrefabs: []
   hatPos: {fileID: 2239360639091849819}
   bowPos: {fileID: 2190216556589537631}
-  fellaAudio: {fileID: 8300000, guid: d6179659d9e53ab4d9522e4f67ee5f7b, type: 3}
+  fellaAudio: {fileID: 8300000, guid: 60bd990ffa260af4d86afeef22f9d022, type: 3}
   pickupClip: {fileID: 8300000, guid: ecc3bbf1baad5a34baf0eb881b0480b6, type: 3}
 --- !u!54 &6873438568036550333
 Rigidbody:
