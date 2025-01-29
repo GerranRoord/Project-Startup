@@ -107,8 +107,9 @@ public class GameManager : MonoBehaviour
         userFrozen = !b;
         print(!b);
     }
-    public void addEXP(int xp, GameObject consertUpgradePos)
+    public void addEXP(int xp, GameObject consertUpgradePos, out string gainedItems )
     {
+        gainedItems = "";
         exp += xp;
 
         while(exp >= expToNextLevel)
@@ -121,20 +122,23 @@ public class GameManager : MonoBehaviour
                 if (lvlRewards[lvl].GetComponent<Cosmetic>() != null)
                 {
                     cosmeticsInventory.Add(lvlRewards[lvl].GetComponent<Cosmetic>());
+                    gainedItems += lvlRewards[lvl].name + "/n";
                 }
                 else if(lvlRewards[lvl].tag == "Bait")
                 {
                     BaitInv.Add(lvlRewards[lvl]);
+                    gainedItems += "Steak /n";
+
                 }
                 else if (lvlRewards[lvl].tag == "Consert")
                 {
                     Instantiate(lvlRewards[lvl], consertUpgradePos.transform);
+                    gainedItems += " Stage upgrade /n";
+
                 }
             }
-
             exp -= expToNextLevel;
             expToNextLevel += 100 * lvl;
-
         }
     }
 
