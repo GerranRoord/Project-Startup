@@ -174,8 +174,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 50
   rarity: 2
-  fellaName: Shark Boy
-  descriptionText: He shark he sing
+  fellaName: Jazzy Jaws
+  descriptionText: "Jazzy Jaws has the biggest, boldest voice you\u2019ve ever heard!
+    His songs can be soft and sweet like a calm ocean, or loud and powerful like
+    crashing waves. He\u2019s the one who gets the crowd cheering and singing along,
+    and he always makes sure the music feels alive and full of fun. Jazzy Jaws is
+    the band\u2019s star performer, and his big personality makes every show unforgettable! "
   cosmetics: []
   cosmeticPrefabs: []
   hatPos: {fileID: 7146672459428651170}

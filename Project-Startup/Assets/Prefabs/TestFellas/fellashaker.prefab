@@ -5008,8 +5008,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 5
   rarity: 0
-  fellaName: Flute Boy
-  descriptionText: This boy flutes hard.
+  fellaName: Blaze Beat
+  descriptionText: "Blaze Beat is like a little firecracker who brings sparkly shakes
+    and sizzling sounds to the band! His shakers add just the right touch of fun
+    and excitement to every song. When Blaze Beat starts grooving, it\u2019s like
+    the music catches fire in the best way possible. He\u2019s always ready to turn
+    up the energy and make sure everyone is having a blast! "
   cosmetics: []
   cosmeticPrefabs: []
   hatPos: {fileID: 2239360639091849819}

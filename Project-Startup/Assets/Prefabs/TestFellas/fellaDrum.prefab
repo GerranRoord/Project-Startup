@@ -175,7 +175,10 @@ MonoBehaviour:
   score: 20
   rarity: 0
   fellaName: Stony Tony
-  descriptionText: This mf drum.
+  descriptionText: "Stony Tony loves to feel the beat of the earth beneath his feet!
+    He thumps the ground to communicate with his fellow Fellas underground, creating
+    deep, resonant percussion rhythms that echo like a heartbeat through the soil.
+    When he\u2019s not jamming, he\u2019s napping in the sun to recharge his groove."
   cosmetics: []
   cosmeticPrefabs: []
   hatPos: {fileID: 6471851009776540003}

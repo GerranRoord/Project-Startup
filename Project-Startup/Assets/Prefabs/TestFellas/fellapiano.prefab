@@ -144,8 +144,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 10
   rarity: 1
-  fellaName: Piano Man
-  descriptionText: He likes pretzels. Plays piano. Is man.
+  fellaName: Octo Jam
+  descriptionText: "Octo Jam is the band\u2019s musical wizard with eight amazing
+    arms! He can play the piano, guitar, and so many other instruments all at the
+    same time. His melodies swirl and dance, filling the air with beautiful sounds
+    that make you want to twirl and jump. Octo Jam loves creating new tunes and keeping
+    the band\u2019s music exciting and fresh\u2014he\u2019s never out of ideas! "
   cosmetics: []
   cosmeticPrefabs: []
   hatPos: {fileID: 204476599476056593}
