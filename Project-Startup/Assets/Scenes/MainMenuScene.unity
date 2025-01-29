@@ -1047,7 +1047,7 @@ PrefabInstance:
       objectReference: {fileID: 1605949237355636914, guid: 9d0b3107e45800041a5617e3616e804f, type: 3}
     - target: {fileID: 7836630731536272230, guid: bf4d1ee0d3f6f0045a63ea7e0a9a4d9d, type: 3}
       propertyPath: cosmeticsInventory.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

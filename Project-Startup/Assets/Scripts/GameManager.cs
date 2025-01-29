@@ -122,18 +122,18 @@ public class GameManager : MonoBehaviour
                 if (lvlRewards[lvl].GetComponent<Cosmetic>() != null)
                 {
                     cosmeticsInventory.Add(lvlRewards[lvl]);
-                    gainedItems += lvlRewards[lvl].name + "/n";
+                    gainedItems += lvlRewards[lvl].name + "\n";
                 }
                 else if(lvlRewards[lvl].tag == "Bait")
                 {
                     BaitInv.Add(lvlRewards[lvl]);
-                    gainedItems += "Steak /n";
+                    gainedItems += "Steak \n";
 
                 }
                 else if (lvlRewards[lvl].tag == "Consert")
                 {
                     Instantiate(lvlRewards[lvl], consertUpgradePos.transform);
-                    gainedItems += " Stage upgrade /n";
+                    gainedItems += " Stage upgrade \n";
 
                 }
             }

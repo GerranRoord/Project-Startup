@@ -117,6 +117,7 @@ public class Fella : MonoBehaviour
 
         foreach (GameObject cosmetic in GameManager.instance.cosmeticsInventory)
         {
+            print(cosmetic);
             cosmeticNames.Add(cosmetic.GetComponent<Cosmetic>().Name);
         }
         cosmeticNames.Add("None");
