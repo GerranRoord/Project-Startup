@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2310049444232643109}
   - component: {fileID: 2736174281294061417}
   - component: {fileID: 5171047097790783303}
+  - component: {fileID: 4334594685899901317}
   m_Layer: 3
   m_Name: fellapiano
   m_TagString: Fella
@@ -159,6 +160,7 @@ MonoBehaviour:
   fellaAudio: {fileID: 8300000, guid: 1de7fa2d3d3bd4242b0601365cb764c6, type: 3}
   ShortfellaAudio: {fileID: 8300000, guid: 7bdcb63266b352440b21a5b278804901, type: 3}
   pickupClip: {fileID: 8300000, guid: ecc3bbf1baad5a34baf0eb881b0480b6, type: 3}
+  anim: {fileID: 4334594685899901317}
 --- !u!54 &2736174281294061417
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -283,6 +285,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &4334594685899901317
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3535927722016138417}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0a5947f612daee54fa2fc7115b6ffb4f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4010754329220406327
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,8 +363,8 @@ Transform:
   m_GameObject: {fileID: 5426064172616328300}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0102}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.0051, z: 0.0083}
+  m_LocalScale: {x: 0.75841, y: 0.75841, z: 0.75841}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4526910966415477163}
