@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 6523768789176621506}
   - component: {fileID: 5499115801193150674}
   - component: {fileID: 1614801368848174924}
+  - component: {fileID: -4963714006393951951}
   m_Layer: 3
   m_Name: fellaDrum
   m_TagString: Fella
@@ -188,6 +189,7 @@ MonoBehaviour:
   fellaAudio: {fileID: 8300000, guid: 72e3c701212df0242b565a733eace128, type: 3}
   ShortfellaAudio: {fileID: 8300000, guid: 4bb08604c6efafc428f92ed99d7d5b5c, type: 3}
   pickupClip: {fileID: 8300000, guid: ecc3bbf1baad5a34baf0eb881b0480b6, type: 3}
+  anim: {fileID: -4963714006393951951}
 --- !u!54 &5499115801193150674
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -312,6 +314,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &-4963714006393951951
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3880711350253856754}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c76f5bea19ea3dd45b455ce9706b9dc9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5848301557357640451
 GameObject:
   m_ObjectHideFlags: 0

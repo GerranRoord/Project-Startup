@@ -95,6 +95,16 @@ public class Concert : MonoBehaviour
         foreach (GameObject fella in fellas)
         {
             fella.GetComponent<AudioSource>().Play();
+            Fella f = fella.GetComponent<Fella>();
+            if (f.fellaName == "Blaze Beat" || f.fellaName == "Jazzy Jaws")
+            {
+                Destroy(fella.GetComponent<Dancing>());
+            }
+            else
+            {
+
+                f.anim.SetBool("singing", true);
+            }
         }
     }
 
@@ -104,7 +114,19 @@ public class Concert : MonoBehaviour
         {
             fellas[i].GetComponent<AudioSource>().Stop();
             muteButtons[i].SetActive(false);
+            Fella f = fellas[i].GetComponent<Fella>();
+            if (f.fellaName == "Blaze Beat" || f.fellaName == "Jazzy Jaws")
+            {
+                Destroy(fellas[i].GetComponent<Dancing>());
+            }
+            else
+            {
+
+                f.anim.SetBool("singing", false);
+            }
         }
+
+
         BG.Play();
     }
 
@@ -142,11 +164,16 @@ public class Concert : MonoBehaviour
         foreach(GameObject fella in fellas)
         {
             fella.GetComponent<AudioSource>().Play();
-                print(fella.GetComponent<Fella>().fellaName + " dance");
+            Fella f = fella.GetComponent<Fella>();
 
-            if (fella.GetComponent<Fella>().fellaName == "Blaze Beat" || fella.GetComponent<Fella>().fellaName == "Jazzy Jaws")
+            if (f.fellaName == "Blaze Beat" || f.fellaName == "Jazzy Jaws")
             {
                 fella.AddComponent<Dancing>();
+            }
+            else
+            {
+
+                f.anim.SetBool("singing", true);
             }
 
         }
@@ -173,11 +200,16 @@ public class Concert : MonoBehaviour
         {
             fellas[i].GetComponent<AudioSource>().Stop();
             muteButtons[i].SetActive(false);
-            if (fellas[i].GetComponent<Fella>().fellaName == "Blaze Beat" || fellas[i].GetComponent<Fella>().fellaName == "Jazzy Jaws")
+            Fella f = fellas[i].GetComponent<Fella>();
+            if (f.fellaName == "Blaze Beat" || f.fellaName == "Jazzy Jaws")
             {
                 Destroy(fellas[i].GetComponent<Dancing>());
             }
-            print(fellas[i].name);
+            else
+            {
+
+                f.anim.SetBool("singing", false);
+            }
         }
         foreach (GameObject dancingFella in dancingFellas)
         {

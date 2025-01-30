@@ -33,6 +33,7 @@ public class Fella : MonoBehaviour
     [SerializeField]
     private AudioClip pickupClip;
 
+    public Animator anim;
 
     float lastClickTime = 0f;
     float doubleClickTime = 0.3f;
@@ -45,7 +46,7 @@ public class Fella : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     public void TestSound()
