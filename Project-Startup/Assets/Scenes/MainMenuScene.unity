@@ -1090,7 +1090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7836630731536272230, guid: bf4d1ee0d3f6f0045a63ea7e0a9a4d9d, type: 3}
       propertyPath: coins
-      value: 380
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 7836630731536272230, guid: bf4d1ee0d3f6f0045a63ea7e0a9a4d9d, type: 3}
       propertyPath: lvlUpClip
