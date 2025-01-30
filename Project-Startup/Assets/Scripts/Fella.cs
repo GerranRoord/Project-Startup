@@ -22,6 +22,8 @@ public class Fella : MonoBehaviour
     [SerializeField]
    public string fellaName;
     [SerializeField]
+    Sprite fellaSprite;
+    [SerializeField]
     private string descriptionText;
     [SerializeField] List<Cosmetic> cosmetics;
     [SerializeField] List<GameObject> cosmeticPrefabs;
@@ -94,7 +96,7 @@ public class Fella : MonoBehaviour
         TMP_Text fatigueText = tempInspector.transform.Find("FellaFatigue")?.GetComponent<TMP_Text>();
         TMP_Text descText = tempInspector.transform.Find("FellaDescription")?.GetComponent<TMP_Text>();
         TMP_Dropdown dropdown = tempInspector.transform.Find("CosmeticDropdown")?.GetComponent<TMP_Dropdown>();
-
+        Image fellaImg = tempInspector.transform.Find("FellaImage")?.GetComponent<Image>();
         if (nameText != null) nameText.text = fellaName;
 
         string rareText = "";
@@ -114,6 +116,7 @@ public class Fella : MonoBehaviour
 
         if (fatigueText != null) fatigueText.text = "Energetic";
         if (descText != null) descText.text = descriptionText;
+        if (fellaImg != null && fellaSprite!=null) fellaImg.sprite = fellaSprite;
 
         List<string> cosmeticNames = new List<string>() { "Select cosmetic" };
 

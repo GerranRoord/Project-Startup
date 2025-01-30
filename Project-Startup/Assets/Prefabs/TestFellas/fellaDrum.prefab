@@ -176,6 +176,7 @@ MonoBehaviour:
   score: 20
   rarity: 0
   fellaName: Stony Tony
+  fellaSprite: {fileID: 973304717, guid: b00796f4a9b68a542b3e44e23b95cbbb, type: 3}
   descriptionText: "Stony Tony loves to feel the beat of the earth beneath his feet!
     He thumps the ground to communicate with his fellow Fellas underground, creating
     deep, resonant percussion rhythms that echo like a heartbeat through the soil.
@@ -360,10 +361,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5848301557357640451}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0015000001, y: 4.36, z: 2.63}
+  m_LocalRotation: {x: -0, y: -0, z: 0.03687393, w: 0.9993199}
+  m_LocalPosition: {x: -0.22, y: 4.61, z: 2.36}
   m_LocalScale: {x: 80, y: 80, z: 80}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 711275958283458501}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.226}

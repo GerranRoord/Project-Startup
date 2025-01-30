@@ -175,6 +175,7 @@ MonoBehaviour:
   score: 50
   rarity: 2
   fellaName: Jazzy Jaws
+  fellaSprite: {fileID: 1518842825, guid: fe0594a022f5b1d49a993f4bde2626e4, type: 3}
   descriptionText: "Jazzy Jaws has the biggest, boldest voice you\u2019ve ever heard!
     His songs can be soft and sweet like a calm ocean, or loud and powerful like
     crashing waves. He\u2019s the one who gets the crowd cheering and singing along,
@@ -189,6 +190,7 @@ MonoBehaviour:
   fellaAudio: {fileID: 8300000, guid: 91b7b0e7b90ec2245b7aee1fb89eda00, type: 3}
   ShortfellaAudio: {fileID: 8300000, guid: 9bae3e95df20bff41b88b293f84b12ab, type: 3}
   pickupClip: {fileID: 8300000, guid: ecc3bbf1baad5a34baf0eb881b0480b6, type: 3}
+  anim: {fileID: 0}
 --- !u!54 &7168175958860300941
 Rigidbody:
   m_ObjectHideFlags: 0
