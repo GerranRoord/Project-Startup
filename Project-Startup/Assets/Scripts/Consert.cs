@@ -144,7 +144,7 @@ public class Concert : MonoBehaviour
             fella.GetComponent<AudioSource>().Play();
                 print(fella.GetComponent<Fella>().fellaName + " dance");
 
-            if (fella.GetComponent<Fella>().fellaName == "Flute Boy" || fella.GetComponent<Fella>().name == "Shark Boy")
+            if (fella.GetComponent<Fella>().fellaName == "Blaze Beat" || fella.GetComponent<Fella>().fellaName == "Jazzy Jaws")
             {
                 fella.AddComponent<Dancing>();
             }
@@ -173,7 +173,10 @@ public class Concert : MonoBehaviour
         {
             fellas[i].GetComponent<AudioSource>().Stop();
             muteButtons[i].SetActive(false);
-            if (fellas[i].GetComponent<Fella>().fellaName == "Flute Boy" || fellas[i].GetComponent<Fella>().name == "Shark Boy") Destroy(fellas[i].GetComponent<Dancing>());
+            if (fellas[i].GetComponent<Fella>().fellaName == "Blaze Beat" || fellas[i].GetComponent<Fella>().fellaName == "Jazzy Jaws")
+            {
+                Destroy(fellas[i].GetComponent<Dancing>());
+            }
             print(fellas[i].name);
         }
         foreach (GameObject dancingFella in dancingFellas)
