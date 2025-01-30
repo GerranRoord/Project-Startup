@@ -95,7 +95,8 @@ public class Concert : MonoBehaviour
         foreach (GameObject fella in fellas)
         {
             fella.GetComponent<AudioSource>().Play();
-            Fella f = fella.GetComponent<Fella>();
+            Destroy(fella.GetComponent<Dancing>());
+/*            Fella f = fella.GetComponent<Fella>();
             if (f.fellaName == "Blaze Beat" || f.fellaName == "Jazzy Jaws")
             {
                 Destroy(fella.GetComponent<Dancing>());
@@ -104,7 +105,7 @@ public class Concert : MonoBehaviour
             {
 
                 f.anim.SetBool("singing", true);
-            }
+            }*/
         }
     }
 
@@ -114,7 +115,9 @@ public class Concert : MonoBehaviour
         {
             fellas[i].GetComponent<AudioSource>().Stop();
             muteButtons[i].SetActive(false);
-            Fella f = fellas[i].GetComponent<Fella>();
+
+            Destroy(fellas[i].GetComponent<Dancing>());
+/*            Fella f = fellas[i].GetComponent<Fella>();
             if (f.fellaName == "Blaze Beat" || f.fellaName == "Jazzy Jaws")
             {
                 Destroy(fellas[i].GetComponent<Dancing>());
@@ -123,7 +126,7 @@ public class Concert : MonoBehaviour
             {
 
                 f.anim.SetBool("singing", false);
-            }
+            }*/
         }
 
 
@@ -164,7 +167,8 @@ public class Concert : MonoBehaviour
         foreach(GameObject fella in fellas)
         {
             fella.GetComponent<AudioSource>().Play();
-            Fella f = fella.GetComponent<Fella>();
+            fella.AddComponent<Dancing>();
+            /*Fella f = fella.GetComponent<Fella>();
 
             if (f.fellaName == "Blaze Beat" || f.fellaName == "Jazzy Jaws")
             {
@@ -175,7 +179,7 @@ public class Concert : MonoBehaviour
 
                 f.anim.SetBool("singing", true);
             }
-
+*/
         }
         foreach (GameObject dancingFella in dancingFellas)
         {
@@ -200,7 +204,8 @@ public class Concert : MonoBehaviour
         {
             fellas[i].GetComponent<AudioSource>().Stop();
             muteButtons[i].SetActive(false);
-            Fella f = fellas[i].GetComponent<Fella>();
+            Destroy(fellas[i].GetComponent<Dancing>());
+/*            Fella f = fellas[i].GetComponent<Fella>();
             if (f.fellaName == "Blaze Beat" || f.fellaName == "Jazzy Jaws")
             {
                 Destroy(fellas[i].GetComponent<Dancing>());
@@ -209,7 +214,7 @@ public class Concert : MonoBehaviour
             {
 
                 f.anim.SetBool("singing", false);
-            }
+            }*/
         }
         foreach (GameObject dancingFella in dancingFellas)
         {
