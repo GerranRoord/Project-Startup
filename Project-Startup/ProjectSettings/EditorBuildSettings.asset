@@ -17,10 +17,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestScenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScenes/GerranTestScene.unity
     guid: ffab8b860adf79e488ced4eb02a45037
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScenes/GerranTestScene2.unity
     guid: 4721f86c537d4dd45b7e2ede0d80f1b4
   - enabled: 1
